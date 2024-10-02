@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './Components/AnotherCount';
+import Async from './Components/Async';
+import Async2 from './Components/Async2';
+import CountDom from './Components/Count';
+import LoginPage from './Components/LoginPage';
+import Demo from './Components/ReducerCounter';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LoginPage/>
+      <Async/>
+      <Async2/>
+      <CountDom/>
+      <Demo/>
+      <Counter/>
     </div>
   );
 }
